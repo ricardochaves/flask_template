@@ -30,7 +30,7 @@ The project already has some lints set up
 
 The project use [black](https://github.com/ambv/black/) and has a pre commit to ensure the application whenever a commit happens. The configuration can be find in [`.pre-commit-config.yaml`](https://github.com/ricardochaves/flask_template/blob/master/.pre-commit-config.yaml). More information [here](https://github.com/ambv/black/#version-control-integration).
 
-The black configuration cam be find in [`pyproject.toml`](https://github.com/ricardochaves/flask_template/blob/master/pyproject.toml)
+The black configuration can be find in [`pyproject.toml`](https://github.com/ricardochaves/flask_template/blob/master/pyproject.toml)
 
 ### Pylint
 
