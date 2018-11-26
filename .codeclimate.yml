@@ -1,4 +1,5 @@
-engines:
+version: 2
+plugins:
   pep8:
     enabled: true
 
@@ -8,7 +9,6 @@ engines:
   sonar-python:
     enabled: true
 
-plugins:
   bandit:
     enabled: true
     config:
