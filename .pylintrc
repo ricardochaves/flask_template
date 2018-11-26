@@ -1,0 +1,6 @@
+#[MESSAGES CONTROL]
+##C0103 Invalid constant name
+#disable=C0103
+
+#[TYPECHECK]
+#generated-members=objects
