@@ -8,6 +8,12 @@ engines:
   sonar-python:
     enabled: true
 
+plugins:
+  bandit:
+    enabled: true
+    config:
+      python_version: 3
+
 exclude_patterns:
   - "**/.venv/"
   - "**/.data/"
