@@ -9,7 +9,7 @@ A Flask API base template
 
 ## Env file
 
-Create a `.env` fila on project root:
+Create a `.env` fila on project root, see [`.exemple.env`](https://github.com/ricardochaves/flask_template/blob/master/.exemple.env):
 
 ```
 # FLASK
@@ -24,12 +24,51 @@ PYTHONUNBUFFERED=1
 
 ## Lint
 
-O projeto já tem alguns lints configurados
+The project already has some lints set up
 
 ### Black
 
-O rojeto usa [black](https://github.com/ambv/black/) e tem um pre commit para garantir a aplicação sempre que um commit acontecer. A configuração fica no arquivo `.pre-commit-config.yaml`. Mais informações [aqui](https://github.com/ambv/black/#version-control-integration).
+The project use [black](https://github.com/ambv/black/) and has a pre commit to ensure the application whenever a commit happens. The configuration can be find in [`.pre-commit-config.yaml`](https://github.com/ricardochaves/flask_template/blob/master/.pre-commit-config.yaml). More information [here](https://github.com/ambv/black/#version-control-integration).
+
+The black configuration cam be find in [`pyproject.toml`](https://github.com/ricardochaves/flask_template/blob/master/pyproject.toml)
+
+### Pylint
+
+The configuration for Pylint can be found in [`pylintrc`](https://github.com/ricardochaves/flask_template/blob/master/.pylintrc).
+
+### Pep8 and Flake8
+
+The configuration can be found in [`setup.cfg`](https://github.com/ricardochaves/flask_template/blob/master/setup.cfg)
 
 ## Test
 
-Para rodar os testes basta executar `tox`.
+To run the tests just run `tox`.
+
+Or run with docker `docker-compose run --rm web_test`
+
+The tox configuration can be found in [`tox.ini`](https://github.com/ricardochaves/flask_template/blob/master/tox.ini)
+
+## VsCode
+
+If you use [VSCode](https://code.visualstudio.com/), this is a sugestion to `settings.json`
+
+```json
+{
+  "python.pythonPath": ".venv/bin/python",
+  "files.exclude": {
+    "**/.git": true,
+    "**/__pycache__": true,
+    "**/*.pyc": true
+  },
+  "editor.formatOnSave": true,
+  "python.formatting.provider": "black",
+  "python.formatting.autopep8Args": ["--max-line-length=120"],
+  "python.formatting.blackArgs": ["--line-length=120"],
+  "python.linting.flake8Enabled": true,
+  "python.linting.pylintArgs": ["--load-plugins pylint_flask"],
+  "python.sortImports.args": ["-sl", "-l 120"],
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": true
+  }
+}
+```

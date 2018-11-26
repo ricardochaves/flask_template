@@ -19,6 +19,5 @@ exclude_patterns:
   - "**/.data/"
   - "**/.pytest_cache/"
   - "**/.vscode/"
-  - "**/tests/"
   - "**/.tox/"
   - "**/.dist/"

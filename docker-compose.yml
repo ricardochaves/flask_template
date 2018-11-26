@@ -8,3 +8,10 @@ services:
     volumes:
       - .:/api
     command: ["flask", "run", "--host=0.0.0.0", "--port=${PORT}"]
+
+  web_test:
+    build: .
+    ports:
+      - "${PORT}:${PORT}"
+    env_file: .env
+    command: ["tox"]

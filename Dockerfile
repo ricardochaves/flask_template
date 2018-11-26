@@ -6,4 +6,5 @@ WORKDIR /api
 ADD . /api
 
 RUN pip install --upgrade pip && \
-    pip install -r requirements_dev.txt
+    pip install -r requirements_dev.txt && \
+    pip install -r /api/tests/requirements.txt
