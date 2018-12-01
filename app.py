@@ -1,8 +1,11 @@
+import logging
+
 from flask import Flask
 from flask import jsonify
 from flask import url_for
 
 app = Flask(__name__)
+logger = logging.getLogger(__name__)
 
 
 @app.route("/", methods=["GET"])
