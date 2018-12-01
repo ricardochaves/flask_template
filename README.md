@@ -11,7 +11,7 @@ A Flask API base template
 
 Create a `.env` fila on project root, see [`.exemple.env`](https://github.com/ricardochaves/flask_template/blob/master/.exemple.env):
 
-```
+```INI
 # FLASK
 FLASK_APP=app.py
 PORT=5005
