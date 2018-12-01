@@ -72,3 +72,7 @@ If you use [VSCode](https://code.visualstudio.com/), this is a sugestion to `set
   }
 }
 ```
+
+## Routes
+
+[Variable Rules](http://flask.pocoo.org/docs/1.0/quickstart/#variable-rules)

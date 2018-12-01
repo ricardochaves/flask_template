@@ -11,7 +11,5 @@ services:
 
   web_test:
     build: .
-    ports:
-      - "${PORT}:${PORT}"
     env_file: .env
     command: ["tox"]

@@ -8,6 +8,8 @@ plugins:
 
   sonar-python:
     enabled: true
+    config:
+      sonar.sourceEncoding: UTF-8
 
   bandit:
     enabled: true
