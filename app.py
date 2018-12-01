@@ -10,7 +10,6 @@ logger = logging.getLogger(__name__)
 @app.route("/", methods=["GET"])
 def hello():
 
-    # methods=['GET', 'POST']
     return "Hello World!"
 
 
