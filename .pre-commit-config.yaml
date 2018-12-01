@@ -8,3 +8,4 @@ repos:
   #   rev: 1.5.1
   #   hooks:
   #     - id: bandit
+  #       language: python
