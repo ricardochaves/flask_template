@@ -1,22 +1,20 @@
-import logging
-
 from flask import Flask
+from flask import jsonify
 from flask import url_for
 
 app = Flask(__name__)
-logger = logging.getLogger(__name__)
 
 
 @app.route("/", methods=["GET"])
 def hello():
-
+    app.logger.info("Home executed.")
     return "Hello World!"
 
 
 @app.route("/user/<username>")
 def user(username):
     post_url = url_for("show_post", post_id=2)
-    return f"I'm {username} and url for your first post is {post_url}"
+    return jsonify({"urser_name": f"I'm {username}", "post_url": post_url})
 
 
 @app.route("/path/<path:subpath>")
