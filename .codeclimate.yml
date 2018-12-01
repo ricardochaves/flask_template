@@ -6,8 +6,8 @@ plugins:
   markdownlint:
     enabled: true
 
-  sonar-python:
-    enabled: true
+  # sonar-python:
+  #   enabled: true
 
   bandit:
     enabled: true
