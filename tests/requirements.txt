@@ -4,3 +4,5 @@ pytest-cov
 coverage
 tox-travis
 coveralls
+jsonschema
+strict-rfc3339

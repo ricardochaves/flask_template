@@ -2,7 +2,8 @@ import logging
 
 from flask import Flask
 from flask import jsonify
-from flask import url_for
+
+import requests
 
 app = Flask(__name__)
 logger = logging.getLogger(__name__)
@@ -14,19 +15,13 @@ def hello():
     return "Hello World!"
 
 
-@app.route("/user/<username>")
+@app.route("/githubuser/<string:username>")
 def user(username):
-    post_url = url_for("show_post", post_id=2)
-    return jsonify({"urser_name": f"I'm {username}", "post_url": post_url})
+    response = requests.get(f"https://api.github.com/users/{username}")
+    return jsonify({"urser_name": username, "id": response.json()["id"], "created_at": response.json()["created_at"]})
 
 
 @app.route("/path/<path:subpath>")
 def show_subpath(subpath):
-    # show the subpath after /path/
-    return "Subpath %s" % subpath
 
-
-@app.route("/post/<int:post_id>")
-def show_post(post_id):
-    # show the post with the given id, the id is an integer
-    return "Post %d" % post_id
+    return jsonify({"your_path": subpath})
