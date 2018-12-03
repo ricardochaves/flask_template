@@ -9,7 +9,7 @@ A Flask API base template
 
 ## Env file
 
-Create a `.env` fila on project root, see [`.exemple.env`](https://github.com/ricardochaves/flask_template/blob/master/.exemple.env):
+Create a `.env` fila on project root, see [`.example.env`](https://github.com/ricardochaves/flask_template/blob/master/.exemple.env):
 
 ```INI
 # FLASK
