@@ -1,6 +1,6 @@
 pytest==4.0.2
 tox==3.6.0
-pytest-cov
+pytest-cov==2.6.0
 coverage
 tox-travis
 coveralls
