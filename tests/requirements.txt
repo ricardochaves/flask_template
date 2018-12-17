@@ -1,5 +1,5 @@
 pytest==4.0.2
-tox
+tox==3.6.0
 pytest-cov
 coverage
 tox-travis
