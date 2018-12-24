@@ -1,7 +1,7 @@
 pytest==4.0.2
 tox==3.6.1
 pytest-cov==2.6.0
-coverage
+coverage==4.5.2
 tox-travis
 coveralls
 jsonschema
