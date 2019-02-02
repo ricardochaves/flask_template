@@ -6,5 +6,4 @@ WORKDIR /api
 COPY . /api
 
 RUN pip install --upgrade pip==18.1 && \
-    pip install -r requirements_dev.txt && \
-    pip install -r /api/tests/requirements.txt
+    pip install -r requirements_dev.txt
