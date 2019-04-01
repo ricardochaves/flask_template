@@ -2,7 +2,7 @@ pytest==4.4.0
 tox==3.8.4
 pytest-cov==2.6.1
 coverage==4.5.3
-tox-travis==0.11
+tox-travis==0.12
 coveralls==1.5.1
 jsonschema==2.6.0
 strict-rfc3339==0.7
