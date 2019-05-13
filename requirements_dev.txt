@@ -2,6 +2,6 @@
 black==19.3b0
 flake8==3.7.7
 isort==4.3.19
-pylint==2.2.2
+pylint==2.3.1
 pre-commit==1.13.0
 bandit==1.5.1
