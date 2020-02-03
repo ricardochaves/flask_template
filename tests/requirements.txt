@@ -3,6 +3,6 @@ tox==3.14.3
 pytest-cov==2.8.1
 coverage==5.0.3
 tox-travis==0.12
-coveralls==1.8.1
+coveralls==1.10.0
 jsonschema==3.0.1
 strict-rfc3339==0.7
