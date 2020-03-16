@@ -4,5 +4,5 @@ pytest-cov==2.8.1
 coverage==5.0.3
 tox-travis==0.12
 coveralls==1.11.1
-jsonschema==3.0.1
+jsonschema==3.2.0
 strict-rfc3339==0.7
