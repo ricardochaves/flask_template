@@ -3,5 +3,5 @@ black==19.10b0
 flake8==3.8.3
 isort==5.0.9
 pylint==2.5.3
-pre-commit==1.17.0
+pre-commit==2.6.0
 bandit==1.6.2
