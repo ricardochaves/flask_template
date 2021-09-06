@@ -4,4 +4,4 @@ flake8==3.9.2
 isort==5.9.3
 pylint==2.10.2
 pre-commit==2.15.0
-bandit==1.6.2
+bandit==1.7.0
